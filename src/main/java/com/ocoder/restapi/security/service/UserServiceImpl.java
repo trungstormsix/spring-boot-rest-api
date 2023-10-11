@@ -17,11 +17,7 @@ import com.ocoder.restapi.security.dto.RegistrationRequest;
 import com.ocoder.restapi.security.dto.RegistrationResponse;
 import com.ocoder.restapi.util.GeneralMessageAccessor;
 
-/**
- * Created on Ağustos, 2020
- *
- * @author Faruk
- */
+ 
 @Slf4j
 @Service
 @RequiredArgsConstructor

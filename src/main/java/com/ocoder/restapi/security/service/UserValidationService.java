@@ -11,11 +11,8 @@ import com.ocoder.restapi.repository.UserRepository;
 import com.ocoder.restapi.security.dto.RegistrationRequest;
 import com.ocoder.restapi.util.ExceptionMessageAccessor;
 
-/**
- * Created on Ağustos, 2020
- *
- * @author Faruk
- */
+
+
 @Slf4j
 @Service
 @RequiredArgsConstructor
@@ -62,7 +59,7 @@ public class UserValidationService {
 
 			log.warn("{} is already being used!", email);
 
-			final String existsEmail ="dfdf " + exceptionMessageAccessor.getMessage(null, EMAIL_ALREADY_EXISTS);
+			final String existsEmail =  exceptionMessageAccessor.getMessage(null, EMAIL_ALREADY_EXISTS);
 			log.warn("{} is already being used! " + existsEmail, email);
 
 			throw new RegistrationException(existsEmail);
